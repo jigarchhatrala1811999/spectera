@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Spectera</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_form">Form</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="manageresource">Manage Resource</string>
+    <string name="registration">Registration</string>
+    <string name="currenctio">Curretion</string>
+    <string name="paytmvalidation">Paytm Validation</string>
+    <string name="modifyadmin">Modify Admin</string>
+    <string name="qrscan">Qr Scan</string>
+    <string name="listall">List All</string>
+    <string name="email">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone">phone</string>
+    <string name="collegename">collegename : </string>
+</resources>

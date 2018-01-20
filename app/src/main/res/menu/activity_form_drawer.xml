@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_manageresponse"
+            android:title="@string/manageresource" />
+
+        <item
+            android:id="@+id/menu_registration"
+            android:title="@string/registration" />
+        <item
+            android:id="@+id/menu_currenction"
+            android:title="@string/currenctio"
+            />
+        <item
+            android:id="@+id/menu_paytm"
+            android:title="@string/paytmvalidation"
+            />
+
+        <item
+            android:id="@+id/menu_modifyadmin"
+            android:title="@string/modifyadmin"
+            />
+
+
+        <item
+            android:id="@+id/menu_qrscanner"
+            android:title="@string/qrscan"
+            />
+
+
+        <item
+            android:id="@+id/menu_listall"
+            android:title="@string/listall"
+            />
+
+
+    </group>
+
+
+</menu>
