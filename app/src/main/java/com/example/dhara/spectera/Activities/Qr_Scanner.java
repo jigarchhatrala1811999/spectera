@@ -11,9 +11,9 @@ import com.example.dhara.spectera.interfaces.Initializer;
 
 public class Qr_Scanner extends AppCompatActivity implements Initializer, com.example.dhara.spectera.Qrscanner.Qr_Scanner.QrScannerResult, Finish {
 
+
     com.example.dhara.spectera.Qrscanner.Qr_Scanner qr_scanner;
     Aleartdialogs aleartdialogs;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +23,8 @@ public class Qr_Scanner extends AppCompatActivity implements Initializer, com.ex
 
     @Override
     public void initialize() {
-        aleartdialogs = new Aleartdialogs(this, this);
-        qr_scanner = new com.example.dhara.spectera.Qrscanner.Qr_Scanner(this, this);
+        aleartdialogs=new Aleartdialogs(this,this);
+        qr_scanner=new com.example.dhara.spectera.Qrscanner.Qr_Scanner(this,this);
         qr_scanner.scanQr();
     }
 
@@ -37,6 +37,7 @@ public class Qr_Scanner extends AppCompatActivity implements Initializer, com.ex
         intent.putExtras(bundle);
         startActivity(intent);
         finish();
+aleartdialogs.showDialog(s);
     }
 
     @Override
@@ -46,7 +47,6 @@ public class Qr_Scanner extends AppCompatActivity implements Initializer, com.ex
 
     @Override
     public void dialogYesCallBack() {
-
         qr_scanner.scanQr();
     }
 }

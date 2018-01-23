@@ -22,10 +22,15 @@
         <activity
             android:name=".Activities.Form"
             android:label="@string/title_activity_form"
+<<<<<<< HEAD
             android:theme="@style/AppTheme">
 
         </activity>
         <activity android:name=".Activities.Qr_Scanner"></activity>
         <activity android:name=".Activities.Registration"></activity>
+=======
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.Qr_Scanner"></activity>
+>>>>>>> parent of e2a18c7... second commit
     </application>
 </manifest>

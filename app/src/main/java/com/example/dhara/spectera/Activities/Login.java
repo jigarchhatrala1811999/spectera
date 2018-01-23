@@ -34,7 +34,7 @@ public class Login extends AppCompatActivity implements Initializer, NetWorking.
     ArrayAdapter arrayAdapter;
     SharedPreferences sharedPreferences;
     NetWorking netWorking;
-    public static String mainurl="http://accit.in";
+    public static String mainurl="http://accit.in/android/login.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,7 +74,6 @@ public class Login extends AppCompatActivity implements Initializer, NetWorking.
         } else if (password.isEmpty()) {
             flag = false;
         }
-        //Toast.makeText(this, username+"\n"+password, Toast.LENGTH_SHORT).show();
         if(!flag){
             Toast.makeText(this, "Please Enter Valid Data", Toast.LENGTH_SHORT).show();
             return;
@@ -83,13 +82,11 @@ public class Login extends AppCompatActivity implements Initializer, NetWorking.
         map.put("username", username);
         map.put("password", password);
         map.put("logintype", logintype);
-        String url=mainurl+"/public_html/android/login.php";
-        //netWorking.SendRequest(url, map);
-        //netWorking.SendRequest("http://accit.in/android/login.php", map);
-        NetWork2.send("http://accit.in/android/login.php",map,this);
-       /* sharedPreferences.edit().putString("username", username).apply();
+
+        netWorking.SendRequest("http://192.168.1.55/spce/Events/login.php", map);
+        sharedPreferences.edit().putString("username", username).apply();
         sharedPreferences.edit().putString("password", password).apply();
-        sharedPreferences.edit().putString("logintype", logintype).apply();*/
+        sharedPreferences.edit().putString("logintype", logintype).apply();
     }
 
     @Override
