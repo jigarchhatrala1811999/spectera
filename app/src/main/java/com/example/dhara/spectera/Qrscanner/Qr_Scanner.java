@@ -3,7 +3,6 @@ package com.example.dhara.spectera.Qrscanner;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.dhara.spectera.interfaces.QrScannerResult;
 import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
@@ -36,5 +35,10 @@ public class Qr_Scanner implements ZXingScannerView.ResultHandler {
         zXingScannerView.setResultHandler(this);
         zXingScannerView.stopCamera();
         qrScannerResult.qrscannreresult(result.getText().toString());
+    }
+
+
+    public static interface QrScannerResult {
+        public void qrscannreresult(String s);
     }
 }

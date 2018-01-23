@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="users">
+        <item>Registration</item>
+        <item>Verification</item>
+    </string-array>
+    <string-array name="events">
+        <item>Datalyzer</item>
+        <item>Code Kipofo</item>
+        <item>Cypherium</item>
+        <item>Code-E-Jung</item>
+        <item>Aflos Coding</item>
+        <item>Office Office</item>
+        <item>Follow Me Blindly</item>
+        <item>Pick-A-Pic</item>
+        <item>Crazy Cricket</item>
+        <item>Counter Strike</item>
+        <item>Scavnenging Hunt</item>
+        <item>Minute To Win It</item>
+        <item>Sherlock Holmes</item>
+        <item>Combo 1 + DJ</item>
+        <item>Combo 2</item>
+        <item>Combo 3 + DJ</item>
+        <item>Smart Computing</item>
+        <item>Dj Francis</item>
+        <item>On The Spot</item>
+    </string-array>
+</resources>

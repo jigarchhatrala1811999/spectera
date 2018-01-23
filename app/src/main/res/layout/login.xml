@@ -28,11 +28,12 @@
             android:layout_marginTop="40dp"
             android:drawableLeft="@drawable/ic_person_black_24dp"
             android:drawablePadding="12dp"
-
+            android:id="@+id/username"
             android:background="@color/zxing_transparent"
             android:hint="@string/username" />
 
         <EditText
+            android:id="@+id/password"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
@@ -41,7 +42,11 @@
             android:hint="@string/password"
             android:background="@color/zxing_transparent"
             android:inputType="textPassword" />
-
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginspinner"></Spinner>
         <Button
             android:layout_width="130dp"
             android:layout_height="wrap_content"

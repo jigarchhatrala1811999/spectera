@@ -1,7 +1,6 @@
 package com.example.dhara.spectera.Activities;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,10 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.dhara.spectera.Fragments.Registration;
-import com.example.dhara.spectera.Qrscanner.Qr_Scanner;
 import com.example.dhara.spectera.R;
 import com.example.dhara.spectera.interfaces.Initializer;
-import com.example.dhara.spectera.interfaces.QrScannerResult;
 
 public class Form extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,Initializer {
